@@ -1,0 +1,100 @@
+:root {
+--p10px: 10px;
+--dblue: rgb(0, 0, 139);
+--box-shadow: 0 0 15px gray;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: var(--dblue);
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    display: block;
+    padding: 20px;
+}
+
+h1 {
+    color: var(--dblue);
+}
+
+img {
+    width: 150px;
+    height: auto;
+    border: 1px solid black;
+    margin: 5px;
+    padding: 2px;
+    box-shadow: var(--box-shadow);
+}
+
+p {
+    padding: var(--p10px);
+}
+
+main {
+    max-width: 840px;
+}
+
+aside {
+    width: 20rem;
+    margin: 1rem;
+    border: 3px #000;
+    padding: var(--p10px);
+    background-color: #96c;
+    color: #000;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    width: 20em;
+    text-align: center;
+}
+
+aside h2 {
+    position: absolute;
+    top: 100%;
+    left: auto;
+}
+
+aside img {
+    width: 200px;
+    height: auto;
+    box-shadow: var(--box-shadow);
+}
+
+main img {
+    width: 150px;
+    height: auto;
+    box-shadow: var(--box-shadow);
+    float: right;
+}
+
+p {
+    padding: 0;
+}
+
+footer {
+    margin-top: 20px;
+    border-top: 1px solid #000;
+    text-align: center;
+    background-color: var(--dblue);
+    color: white;
+}
+
+/* Class Selectors */
+
+.box {
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 /.1);
+    padding: 1rem;
+    background-color: #ddd;
+    color: #000;
+}
+
+
+
