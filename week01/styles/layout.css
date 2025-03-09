@@ -26,8 +26,21 @@ nav {
 	text-decoration: underline;
 	text-decoration-color: yellow;
 }
-body {
+.mainbody {
     display: grid;
-    /* grid-template-rows: ; */
+    grid-template-rows: 1fr;
     grid-template-columns: 2fr 1fr;
 }
+
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    background-color: var(--accent1-color);
+    border-radius: 15px;
+    padding: 15px;
+    /* z-index: 0; */
+  }
+  
