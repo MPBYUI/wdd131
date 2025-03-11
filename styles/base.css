@@ -8,25 +8,33 @@
     --background: rgba(64,35,231,0.5);
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 
-
-
-nav {
-	margin: 0 auto 2rem;
-	max-width: 90vw;
 }
-.navigation {
+
+a, p {
+    font-family: "Inter";
+}
+
+/* header */
+
+.navmenu {
 	list-style: none;
 	display: flex;
 	flex-wrap: wrap;
 	background-color: #333;
 	align-items: center;
+    
+    
 }
-.navigation li {
+.navmenu li {
 	flex: 1 1 auto; 
 }
 
-.navigation a {
+.navmenu a {
 	display: block;
 	color: #eee;
 	padding: 0.75rem;
@@ -34,44 +42,89 @@ nav {
 	text-align: center;
 }
 
-.navigation a:hover {
+.navmenu a:hover {
 	font-weight: 700;
 	text-decoration: underline;
 	text-decoration-color: yellow;
 }
+
+h1 {
+    display: grid;
+    text-align: center;
+    background-color: var(--accent4-color);
+    color:white;
+    font-size: 2.5rem;
+    padding: 10px;
+    font-family: "Inter";
+}
+
+/* body */
+
 .mainbody {
     display: grid;
     grid-template-columns: 2fr 1fr;
     margin: 10px;
     padding: 3%;
+    gap: 1%;
 }
 
-main {
-    /* border: black 1px solid; */
-    /* border-left: black 1px solid;
-    border-right: black 1px solid;
-    border-bottom: black 1px solid; */
 
+h2 {
+    background-color: var(--accent1-color);
+    color: white;
+    text-align: center;
+    border-radius: 14px 14px 0px 0px;
+    font-size: 2rem;
+    padding: 0.5rem;
+    font-family: "Balsamiq Sans";
 }
 
-aside {
-    /* border: black 1px solid; */
-    border-left: black 1px solid;
-    border-right: black1px solid;
-    border-bottom: black 1px solid;
-}
 
-.aboutme {
+.card {
     margin-right: 6px;
     border: black 1px solid;
     border-radius: 15px;
     height: auto;
 }
 
-.webdev {
-    margin-left: 6px;
-    height: auto;
+
+.countryinfo {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: ;
 }
+
+.profile {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-bottom: 10px;
+}
+
+.profile img {
+    width: 80%;
+    margin: 1rem;
+    border-radius: 20%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    align-self: center;
+}
+
+.profile p {
+    font-size: 1.2rem;
+    margin: 1rem;
+    align-self: center;
+}
+
+/* do after flag */
+.webdev {
+    display: grid;
+    gap: 10px;
+    padding: 20px;
+    margin: 100px 10px 50px 10px;
+}
+
+
+/* footer */
+
 
 footer {
     display: grid;
@@ -85,10 +138,45 @@ footer {
   }
   
 
-h2 {
-    background-color: var(--accent1-color);
-    color: white;
-    text-align: center;
-    border-radius: 15px 15px 0px 0px;
-}
 
+
+
+
+
+
+  .balsamiq-sans-regular {
+    font-family: "Balsamiq Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .balsamiq-sans-bold {
+    font-family: "Balsamiq Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .balsamiq-sans-regular-italic {
+    font-family: "Balsamiq Sans", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .balsamiq-sans-bold-italic {
+    font-family: "Balsamiq Sans", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+
+
+
+
+
+  .inter {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
