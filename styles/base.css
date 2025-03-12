@@ -15,7 +15,7 @@
 
 }
 
-a, p {
+a, p h1, h2, h3{
     font-family: "Inter";
 }
 
@@ -40,12 +40,13 @@ a, p {
 	padding: 0.75rem;
 	text-decoration: none;
 	text-align: center;
+    transition: all .2s ease-in-out; 
 }
 
 .navmenu a:hover {
-	font-weight: 700;
-	text-decoration: underline;
-	text-decoration-color: yellow;
+	background-color: #3019b0;
+    border-radius: 25px;
+    transform: scale(.9);
 }
 
 h1 {
@@ -53,9 +54,9 @@ h1 {
     text-align: center;
     background-color: var(--accent4-color);
     color:white;
-    font-size: 2.5rem;
+    font-size: 2rem;
     padding: 10px;
-    font-family: "Inter";
+    /* font-family: "Inter"; */
 }
 
 /* body */
@@ -74,9 +75,15 @@ h2 {
     color: white;
     text-align: center;
     border-radius: 14px 14px 0px 0px;
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 0.5rem;
-    font-family: "Balsamiq Sans";
+    /* font-family: "Balsamiq Sans"; */
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "Inter";
 }
 
 
@@ -87,11 +94,19 @@ h2 {
     height: auto;
 }
 
-
-.countryinfo {
+.flagP {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: ;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* gap: 10px; */
+    padding: 20px;
+    /* margin: 100px 10px 50px 10px; */
+    justify-items: center;
+}
+
+#flag {
+    width: 250px;
+    height: auto;
+    align-self: center;
 }
 
 .profile {
@@ -109,7 +124,8 @@ h2 {
 }
 
 .profile p {
-    font-size: 1.2rem;
+    font-style: normal;
+    font-size: 1.3rem;
     margin: 1rem;
     align-self: center;
 }
@@ -122,6 +138,15 @@ h2 {
     margin: 100px 10px 50px 10px;
 }
 
+#cite {
+    font-style: italic;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+/* #countryinfo {
+    
+} */
 
 /* footer */
 
