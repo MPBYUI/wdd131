@@ -103,7 +103,7 @@ h3 {
     justify-items: center;
 }
 
-#flag {
+.flag {
     width: 250px;
     height: auto;
     align-self: center;
