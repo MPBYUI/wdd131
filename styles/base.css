@@ -61,12 +61,17 @@ h1 {
 
 /* body */
 
+main {
+    max-width: fit-content;
+}
+
 .mainbody {
     display: grid;
     grid-template-columns: 2fr 1fr;
     margin: 10px;
     padding: 3%;
     gap: 1%;
+
 }
 
 
