@@ -1,12 +1,16 @@
-// alert(document.lastModified);
-// // returns: Tuesday, December 16, 2017 11:09:42
+const lastModified = document.querySelector('#lastModified');
+const lastMod = new Date(document.lastModified);
 
-var lastModified = document.lastModified;
-document.getElementById("modified").innerHTML = lastModified;
-
+lastModified.textContent = `Last modified: ${lastMod.toLocaleString()}`;
 
 
 
-// const date = new Date(2025,2,20,21,0,0);
 
-// console.log(date);
+
+// const currentYear = document.querySelector('#currentYear');
+// const lastModified = document.querySelector('#lastModified');
+// const current = new Date().getFullYear();
+// const lastMod = document.lastModified;
+
+// currentYear.textContent = current;
+// lastModified.textContent = `last modified: ${lastMod.toLocaleString()}`;
