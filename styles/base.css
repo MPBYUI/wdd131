@@ -30,8 +30,10 @@ a, p h1, h2, h3{
     
     
 }
-.navmenu li {
-	flex: 1 1 auto; 
+.navmenu {
+	display: flex;
+    justify-content: space-around;
+
 }
 
 .navmenu a {
