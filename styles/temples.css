@@ -32,7 +32,7 @@ a, p h1, h2, h3{
 }
 .navmenu {
 	display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 
 }
 
@@ -42,7 +42,8 @@ a, p h1, h2, h3{
 	padding: 0.75rem;
 	text-decoration: none;
 	text-align: center;
-    transition: all .2s ease-in-out; 
+  transition: all .2s ease-in-out; 
+  font-size: larger;
 }
 
 .navmenu a:hover {
@@ -64,13 +65,14 @@ h1 {
 /* body */
 
 main {
-    max-width: fit-content;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.mainbody {
+.album {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    margin: 10px;
+    grid-template-columns: .5fr 2fr .5fr;
+    /* margin: 10px; */
     padding: 3%;
     gap: 1%;
 
@@ -144,3 +146,4 @@ footer {
     font-style: normal;
   }
   
+
